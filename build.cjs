@@ -1,0 +1,1 @@
+const fs=require('node:fs');fs.rmSync('dist',{recursive:true,force:true});fs.mkdirSync('dist');fs.copyFileSync('index.html','dist/index.html');fs.writeFileSync('dist/.nojekyll','');console.log('Static site built in dist');
